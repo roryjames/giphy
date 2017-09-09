@@ -18,7 +18,7 @@ renderButtons();
 $('#places-buttons button').on('click', function() {
     $('#places-view').empty();
     var place = $(this).attr('data-type');
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + place + '&api_key=dc6zaTOxFJmzC&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + place + '&api_key=dc6zaTOxFJmzC&limit=10';
     $.ajax({
             url: queryURL,
             method: 'get'
